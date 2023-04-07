@@ -1,0 +1,22 @@
+.main_section {
+    padding: 2em 3em;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.9em;
+}
+
+.link2 {
+    background-color: rgb(176, 224, 224);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bolder;
+    padding: 0.9em;
+    margin: 1em;
+    border-radius: 0.6em;
+}

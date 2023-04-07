@@ -1,0 +1,20 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 2em;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: rgb(134, 159, 182);
+    margin-bottom: 0.8em;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+.service:hover {
+    background-color: rgb(197, 209, 221);
+}

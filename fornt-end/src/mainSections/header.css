@@ -1,0 +1,24 @@
+.header {
+    background-color: rgb(168, 143, 143);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0.6em 0.2em;
+    flex-wrap: wrap;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.link :hover {
+    color: rgb(220, 213, 226);
+}
+
+.client-img {
+    display: block;
+    max-height: 2em;
+}
