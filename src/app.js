@@ -27,9 +27,7 @@ const app = express();
 ///////////////////// main  midllware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-
-
+app.use(express.static(path.join(__dirname, '../fornt-end/build')))
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
 app.use(session({
     secret: "fe frjg ir n",
@@ -49,23 +47,12 @@ app.use('/logout', logoutApi)
 app.use('/update', multer().none())
 app.use('/update', updateApi)
 
-//////////////////////////////////// test module
-app.get('/insert', (req, res) => {
-    console.log('testing methods')
-    Employee.insertMany([{
-            name: "admin",
-            natId: 123111111111,
-            phone: 1029059002,
-            password: "admin",
-            userName: "admin",
-            authLevel: 10,
+//////////////////////////////////// serve all static forent in production mode
+app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname, "../fornt-end/build/index.html"))
+    })
+    ////////////////////// running on port
 
-        }])
-        .then(r => console.log('added to db '))
-
-})
-
-////////////////////// running on port 
 mongoose.connect(db_uri)
     .then(e => app.listen(port, e => { console.log(`running on port ${port}`) }))
     .catch(err => console.log('CAN NOT CONNECT TO DB '))

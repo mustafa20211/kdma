@@ -4,6 +4,7 @@ const loginApi = new Router();
 loginApi.post('/:client', (req, res) => {
     const client = req.params.client;
     const { userName, password } = req.body
+    console.log('login api')
     console.log(password, userName)
     if (client === 'customer') {
         Customer.findOne({ password, userName })
