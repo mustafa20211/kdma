@@ -3,7 +3,7 @@ application developed by ExpressJs,MongoDb As backEnd,and ReactJa ,Html,Css As F
 system is  built for help any comapny to follow up service delivery for its clients by number of stages are built in system as followed 
 ...................................................................................................................
 Customer create account on company site 
- customer apply to one of providing services of company 
+customer apply to one of providing services of company 
 Reviewer team review docs and details of customer application
 Inspection team make technical study of implementing and determine requirements and determine 
 Customer approve coast of service and pay it 
